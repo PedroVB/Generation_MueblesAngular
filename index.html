@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Final Exercise - AngularJS</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div ng-nav></div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" ng-controller="slider">
+            <div class="item {{element.active}}" ng-repeat="element in elements">
+                <img ng-src="{{element.route}}" alt="Chania" width="460" height="345">
+                <div class="carousel-caption">
+                    <p>{{element.tittle}}</p>
+                    <h3>{{element.description}}</h3>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Nuestra linea de Productos:</h1>
+        </div>
+    </div>
+    <div class="container separation" ng-controller="lineProducts">
+        <div class="row">
+            <div class="col-md-3" ng-repeat="item in items">
+                <a ng-href="{{item.url}}">
+                    <img ng-src="{{item.route}}" class="sectionElements">
+                    <p class="letterProducts">{{item.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="widthZone">
+        <div class="container" ng-controller="associated">
+            <div class="row">
+                <h1 class="partnersColors">Nuestros colaboradores:</h1>
+                <div class="col-md-2" ng-repeat="partner in partners">
+                    <img class="photoPartner" ng-src="{{partner.route}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-footer></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+@font-face {
+  font-family: customfont;
+  src: url(../fonts/myfont.otf); }
+.nav {
+  float: right; }
+
+.navbar-inverse {
+  background-color: white; }
+  .navbar-inverse .navbar-toggle:focus {
+    background-color: #263465; }
+  .navbar-inverse .navbar-toggle:hover {
+    background-color: #263465; }
+  .navbar-inverse .navbar-nav > li > a {
+    font-family: customfont;
+    font-size: 20px;
+    color: #263465; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      font-family: customfont;
+      font-size: 20px;
+      color: #263465;
+      text-decoration: underline; }
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: #263465;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 3px;
+  border-color: #263465; }
+
+.navbar-fixed-bottom {
+  border-top: 3px solid #263465; }
+
+.carousel-caption {
+  font-family: customfont;
+  color: #263465;
+  font-size: 25px;
+  font-weight: bold; }
+
+.glyphicon-chevron-right {
+  content: "\e080";
+  color: #263465; }
+
+.glyphicon-chevron-left {
+  content: "\e079";
+  color: #263465; }
+
+.sectionElements {
+  height: 200px;
+  cursor: pointer; }
+  .sectionElements:hover {
+    border: 4px solid #263465; }
+
+h1 {
+  font-family: customfont;
+  color: #263465;
+  padding-top: 20px; }
+
+.partners {
+  height: 250px;
+  background-color: #263465;
+  margin-top: 30px; }
+
+.letterProducts {
+  font-family: customfont;
+  color: #263465;
+  font-size: 20px; }
+
+.letterProducts2 {
+  font-family: customfont;
+  font-size: 20px; }
+
+input {
+  margin-bottom: 20px; }
+
+#submitDone {
+  font-family: customfont;
+  margin-bottom: 50px; }
+
+.col-md-3 {
+  text-align: center; }
+
+.widthZone {
+  width: 100%;
+  background-color: #263465;
+  height: auto;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 100px; }
+
+.separation {
+  margin-bottom: 15px; }
+
+.partnersColors {
+  color: white;
+  font-family: customfont; }
+
+.formLetters {
+  color: #263465;
+  font-family: customfont; }
+
+.footerElements {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .footerElements a {
+    font-family: customfont;
+    font-size: 20px;
+    color: #263465; }
+    .footerElements a:hover {
+      font-family: customfont;
+      font-size: 20px;
+      color: #263465;
+      text-decoration: underline; }
+
+#galeria_imagen {
+  text-align: center; }
+
+.formCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+#galeria {
+  padding: 10px;
+  padding-bottom: 0;
+  background: white;
+  width: 100%; }
+
+#galeria_miniaturas {
+  display: table;
+  margin: 0 auto; }
+
+#imgGaleria {
+  padding: 3px;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px; }
+
+.miniatura {
+  width: 100px;
+  height: 100px;
+  float: left;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px 5px; }
+  .miniatura:hover {
+    opacity: .8;
+    filter: alpha(opacity=80); }
+  .miniatura:active {
+    opacity: 1;
+    filter: alpha(opacity=80); }
+
+.photoPartner {
+  width: 150px; }
+
+.navbar a.navbar-brand {
+  padding: 3px 15px; }
+
+.carousel-inner > .item > img {
+  width: 100%;
+  margin-top: 50px; }
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto; }
+
+.carousel-indicators .active {
+  background-color: #263465;
+  border: #263465; }
+

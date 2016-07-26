@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Final Exercise - AngularJS</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body data-ng-app='formApp'>
+    <div ng-nav></div>
+    <div class='container formCenter'>
+        <h1 class="messageForm">Póngase en contacto con nosotros y en la mayor brevedad posible le contestaremos</h1>
+        <br/>
+        <div data-ng-controller='MainCtrl'>
+            <form name='exampleForm'>
+                <div class='form-group'>
+                    <label for="name" class="formLetters">Nombre</label>
+                    <input type="text" class='form-control nameInput' placeholder='name' name='name' data-ng-model='formData.name' required data-ng-class='{ error: exampleForm.name.$invalid && !exampleForm.$pristine }'>
+                </div>
+                <div class='form-group'>
+                    <label for="lastname" class="formLetters">Apellido</label>
+                    <input type="text" class='form-control nameInput' placeholder='last name' name='lastname' data-ng-model='formData.lastname' required data-ng-class='{ error: exampleForm.lastname.$invalid && !exampleForm.$pristine }'>
+                </div>
+                <div class='form-group'>
+                    <label for="email" class="formLetters">Email</label>
+                    <input type="email" class='form-control emailinput' placeholder='example@email.com' name='email' data-ng-model='formData.email' required data-ng-class='{ error: exampleForm.email.$invalid && !exampleForm.$pristine, warning: exampleForm.email.$error.email }'>
+                </div>
+                <input type="submit" class='btn btn-success pull-right' data-ng-click='submitForm(formData)' data-ng-disabled='!exampleForm.$valid'>
+            </form>
+        </div>
+    </div>
+    <div ng-footer></div>
+</body>
+</html>

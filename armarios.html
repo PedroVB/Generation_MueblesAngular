@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Final Exercise - AngularJS</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div ng-nav></div>
+    <div id="galeria" ng-controller="armariosGallery">
+        <div id="galeria_imagen">
+            <img id="imgGaleria" src="img/armarioGallery/photo1.jpg" /></div>
+            <div id="galeria_miniaturas">
+                <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" ng-repeat="armario in armarios" ng-src="{{armario.route}}">
+            </div>
+        </div>
+        <div ng-footer></div>
+    </body>
+    </html>
